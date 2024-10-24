@@ -1,0 +1,12 @@
+.campo {
+    border: none;
+    padding: 10px;
+}
+
+.padrao {
+    background-color: #ddd;
+}
+
+.erro {
+    background-color: red;
+}
