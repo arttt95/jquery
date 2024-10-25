@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <!-- jQuery Versão Comprimida -->
+    <!-- <script src="../jquery.js"></script> -->
+
+    <!-- jQuery Versão CDN Comprimida -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Estilo Customizado CSS -->
+     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<body>
+
+    <div id="topo">
+        <h1>Eventos</h1>
+    </div>
+
+    <div>
+        <h3>Browser</h3>
+        <span>Onload: </span><span id="onload">?</span><br />
+        <span>Scroll: </span><span id="scroll">?</span><br />
+        <span>Resize window: </span><span id="resize">?</span>
+        <div id="div1" style="width: 100px; height: 100px; border: solid 1px; overflow-y: scroll">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <hr />
+
+        <h3>Mouse</h3>
+        <button id="btn1" type="button">Clique aqui</button>
+        <button id="btn2" type="button">Clique aqui 2x</button>
+        <div id="div2" style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px"></div>
+        <span>Resultado do evento sobre a div</span>
+        <span id="resultadoDiv"></span>
+
+        <div id="divExterna">
+            <div id="divInterna"></div>
+        </div>
+        <span>Div externa: </span>
+        <span id="resultadoDivExterna"></span>
+        <br>
+        <span>Div interna: </span>
+        <span id="resultadoDivInterna"></span>
+        <hr />
+
+        <h3>Teclado</h3>
+        <span>Nome:</span>
+        <input type="text" />
+        <span>Resultado do evento sobre o input</span>
+        <hr />
+
+        <h3>Formulário</h3>
+        <form>
+            <span>Nome:</span>
+            <input type="text" />
+
+            <span>E-mail:</span>
+            <input type="text" />
+
+            <span>Motivo do contato:</span>
+            <select>
+                <option value="">-- Selecione --</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+            </select>
+            
+            <button type="button">Enviar</button>
+        </form>
+    </div>
+
+</body>
+
+
+
+</html>
